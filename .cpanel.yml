@@ -1,0 +1,8 @@
+---
+  deployment:
+    tasks:
+      - export DEPLOYPATH=/home/aywsolutionweli/public_html/appbs.aywsolution.com/
+      - /bin/rsync -av public/ $DEPLOYPATH
+      - export DEPLOYPATH=/home/aywsolution_weli/appbs/
+      - /bin/rsync -av ./ $DEPLOYPATH
+
