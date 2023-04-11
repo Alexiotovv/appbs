@@ -74,7 +74,12 @@
             var table = $('#example').DataTable({
                 orderCellsTop: true,
                 fixedHeader: true
+                ,order:[0],
+                buttons:['copy','excel','pdf'],
+                dom: 'Bfrtip',
+
             });
+            
 
             //Creamos una fila en el head de la tabla y lo clonamos para cada columna
             $('#example thead tr').clone(true).appendTo('#example thead');
