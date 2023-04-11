@@ -62,6 +62,9 @@
                         <ul>
                             <li> <a href="{{route('trabajadores.index')}}"><i class="bx bx-right-arrow-alt"></i>Buscar por DNI</a>
                             </li>
+                            <li> <a href="{{route('trabajadores.show')}}"><i class="bx bx-right-arrow-alt"></i>Listar Todos y Busq. Avanzada</a>
+                            </li>
+                            
                             <li> <a href="{{route('trabajadores.create')}}"><i class="bx bx-right-arrow-alt"></i>Registrar Nuevo</a>
                             </li>
                             

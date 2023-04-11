@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('modalidad', 50)->nullable()->default('');
             $table->string('lugar_trabajo', 200)->nullable()->default('');
             $table->string('ocupacion', 200)->nullable()->default('');
+            $table->boolean('estado')->nullable()->default(true);
             $table->bigInteger('usuario')->unsigned();
             $table->foreign('usuario')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();

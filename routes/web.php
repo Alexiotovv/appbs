@@ -37,6 +37,7 @@ Route::get('/trabajadores/edit/{id}', [TrabajadoresController::class,'edit'])->m
 Route::post('/trabajadores/update', [TrabajadoresController::class,'update'])->middleware(['auth'])->name('trabajadores.update');
 Route::post('/trabajadores/store', [TrabajadoresController::class,'store'])->middleware(['auth'])->name('trabajadores.store');
 Route::get('/trabajadores/create', [TrabajadoresController::class,'create'])->middleware(['auth'])->name('trabajadores.create');
+Route::get('/trabajadores/show', [TrabajadoresController::class,'show'])->middleware(['auth'])->name('trabajadores.show');
 
 Route::get('/usuarios/index', [UserController::class,'index'])->middleware(['auth'])->name('usuarios.index');
 Route::get('/usuarios/edit/{id}', [UserController::class,'edit'])->middleware(['auth'])->name('usuarios.edit');

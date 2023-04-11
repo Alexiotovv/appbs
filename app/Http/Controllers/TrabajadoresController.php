@@ -66,9 +66,11 @@ class TrabajadoresController extends Controller
      */
     public function show(trabajadores $trabajadores)
     {
-        //
+        $trabajadores=DB::table('trabajadores')
+        ->where('trabajadores.estado','=',true)
+        ->get();
+        return view('trabajadores.trabajador_show',['trabajadores'=>$trabajadores]);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
